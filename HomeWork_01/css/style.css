@@ -1,0 +1,11 @@
+@import url("main.css");
+
+.ordinary {
+	margin: 20px;
+	padding: 20px; 
+	background-color: #FFF5EE; 
+	border-style: solid; 
+	border-width: 1px; 
+	text-align: justify;
+    text-indent: 30px;
+}
