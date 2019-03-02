@@ -1,0 +1,37 @@
+/*Наш первый CSS-файл.*/
+
+p {
+	font-size: 400%;
+}
+Способы подключения файла CSS
+/*
+1. В файле HTML: <link type="text/css" rel="stylesheet" href="css/main.css"/>
+2. Можно создать ещё один файл, например, color.css, прописать его в основном файле css и уже в color.css написать:
+@import url("color.css");
+3. В файле HTML внутри тега head использовать тег
+<style> </style>. вот как это выглядит:
+<style>
+        p {
+            font-family: Verdana;
+        }
+    </style> Этот вариант для временного или быстрого использования. Удобно для тестирования, быстренько проверить, как работает.
+4.Ib-Line стиль. Он указыввается непосредственно у элемента. Возьмём для примера <p></p>. Выглядит это так:
+<p style="font-style: italic;">Некоторый текст...</p> Такой синтаксис следует избегать.*/
+Подключаем шрифт
+/*
+Создарём папку fonts/
+Ищем шрифт на сайтах:
+Шрифты: http://allfont.ru/ и https://dafontfree.net
+Конвертируем шрифты: https://onlinefontconverter.com/
+Ложим в папку fonts и пишем в файле css:*/
+@font-face {
+  font-family: BadScript;
+  src: url("../fonts/BadScript.woff2") format("woff2"), url("../fonts/BadScript.woff") format("woff");
+}
+p{
+  font-family: BadScript; /*Здесь я применил шрифт к параграфу.*/
+}
+
+h1 {
+  text-align: center;
+}

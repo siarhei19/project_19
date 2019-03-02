@@ -1,0 +1,44 @@
+/*Наш первый CSS-файл.*/
+@font-face {
+  font-family: BadScript;
+  src: url("../fonts/BadScript.woff2") format("woff2"), url("../fonts/BadScript.woff") format("woff");
+}
+body {
+  font-family: BadScript; /*Здесь я применил шрифт к телу страницы.*/
+}
+h1 {
+  text-align: center;
+}
+
+p {
+	font-size: 150%;
+  font-weight: bold;
+  line-height: 200%;
+  text-indent: 20px;
+}
+
+p {
+  font-style: italic;
+  color: rgb(0, 138, 138);
+}
+.decor {
+  text-decoration: line-through;
+  text-indent: 0;
+}
+
+a {
+  color: #c00;
+  font-size: 200%;
+  text-decoration: none;
+}
+
+a.apper {
+    text-transform: uppercase;
+}
+
+a.lower {
+    text-transform: lowercase;
+}
+.shadow {
+  text-shadow: 5px 4px 5px #555;
+}
